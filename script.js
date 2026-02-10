@@ -12,7 +12,7 @@
     const canvas = document.getElementById('shimmer-canvas');
     const ctx = canvas.getContext('2d');
     let particles = [];
-    const PARTICLE_COUNT = 60;
+    const PARTICLE_COUNT = 120;
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
@@ -23,10 +23,10 @@
         return {
             x: Math.random() * canvas.width,
             y: Math.random() * canvas.height,
-            size: Math.random() * 2 + 0.5,
-            speedX: (Math.random() - 0.5) * 0.3,
-            speedY: (Math.random() - 0.5) * 0.3,
-            opacity: Math.random() * 0.5 + 0.1,
+            size: Math.random() * 2.5 + 0.8,
+            speedX: (Math.random() - 0.5) * 0.4,
+            speedY: (Math.random() - 0.5) * 0.4,
+            opacity: Math.random() * 0.7 + 0.2,
             flickerSpeed: Math.random() * 0.02 + 0.005,
             flickerOffset: Math.random() * Math.PI * 2,
         };
