@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Hair Studio — Wellington's Premier Hair Studio</title>
+    <meta name="description" content="Where Style Meets Soul. Wellington's premier boutique hair studio on Courtenay Place. Cuts, colour, treatments & barbering by expert stylists.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Shimmer Canvas -->
+    <canvas id="shimmer-canvas"></canvas>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#" class="nav__logo">
+                <span class="nav__logo-icon">✦</span>
+                <span class="nav__logo-text">Velvet Hair Studio</span>
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="#home" class="nav__link active">Home</a></li>
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#team" class="nav__link">Team</a></li>
+                <li><a href="#gallery" class="nav__link">Gallery</a></li>
+                <li><a href="#reviews" class="nav__link">Reviews</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav__cta">Book Now</a>
+            <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="mobile-menu__cta">Book Now</a>
+        <div class="mobile-menu__info">
+            <p>+64 4 555 0555</p>
+            <p>89 Courtenay Place, Te Aro</p>
+        </div>
+    </div>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+        <div class="hero__bg"></div>
+        <div class="hero__content">
+            <p class="hero__subtitle reveal-text">Wellington's Premier Hair Studio</p>
+            <h1 class="hero__title reveal-text">
+                <span class="hero__title-line">Where Style</span>
+                <span class="hero__title-line"><em>Meets</em> Soul</span>
+            </h1>
+            <p class="hero__desc reveal-text">Luxurious cuts, colour & treatments in the heart of Courtenay Place. Your hair journey starts here.</p>
+            <div class="hero__ctas reveal-text">
+                <a href="#contact" class="btn btn--primary">Book an Appointment</a>
+                <a href="#gallery" class="btn btn--outline">View Our Work</a>
+            </div>
+        </div>
+        <div class="hero__scroll-indicator">
+            <span>Scroll</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+
+        <!-- Curved divider -->
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,120 C360,20 1080,20 1440,120 L1440,120 L0,120 Z" fill="#1a1a1a"/>
+        </svg>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image-col reveal-up">
+                    <div class="about__image-wrapper">
+                        <div class="about__image-placeholder">
+                            <span class="placeholder-icon">✦</span>
+                            <span>Salon Interior</span>
+                        </div>
+                        <div class="about__image-accent"></div>
+                    </div>
+                </div>
+                <div class="about__text-col reveal-up" data-delay="200">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">A Wellington <em>Institution</em></h2>
+                    <p>Nestled in the vibrant heart of Courtenay Place, Velvet Hair Studio is more than a salon — it's a sanctuary. Since opening our doors, we've become one of Wellington's most sought-after boutique hair studios, known for transformative colour, precision cuts, and an atmosphere that feels like home.</p>
+                    <p>Our team of passionate stylists brings together decades of collective experience, a commitment to ongoing education, and a genuine love for the craft. We believe great hair starts with understanding — your lifestyle, your texture, your vision.</p>
+                    <div class="about__values">
+                        <div class="about__value">
+                            <span class="about__value-icon">🌿</span>
+                            <h4>Sustainable Beauty</h4>
+                            <p>We proudly use eco-conscious, cruelty-free products from Olaplex, Kevin Murphy & Redken.</p>
+                        </div>
+                        <div class="about__value">
+                            <span class="about__value-icon">💜</span>
+                            <h4>All Welcome</h4>
+                            <p>Every hair type, every texture, every person. Our studio is a safe, inclusive space for all.</p>
+                        </div>
+                    </div>
+                    <div class="about__brands">
+                        <span>Trusted brands:</span>
+                        <div class="about__brand-list">
+                            <span class="about__brand">Olaplex</span>
+                            <span class="about__brand">Kevin Murphy</span>
+                            <span class="about__brand">Redken</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,0 C360,100 1080,100 1440,0 L1440,120 L0,120 Z" fill="#141414"/>
+        </svg>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Services & <em>Pricing</em></h2>
+                <p class="section-desc">From precision cuts to transformative colour — explore our full menu of services.</p>
+            </div>
+
+            <div class="services__tabs reveal-up" data-delay="200">
+                <button class="services__tab active" data-tab="cut">✂️ Cut & Style</button>
+                <button class="services__tab" data-tab="colour">🎨 Colour</button>
+                <button class="services__tab" data-tab="treatments">💆 Treatments</button>
+                <button class="services__tab" data-tab="barbering">💇 Barbering</button>
+            </div>
+
+            <div class="services__panels">
+                <!-- Cut & Style -->
+                <div class="services__panel active" data-panel="cut">
+                    <div class="services__list">
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Women's Cut & Blow Dry</h4>
+                                <p>Consultation, shampoo, precision cut & styled blow dry</p>
+                            </div>
+                            <span class="service-item__price">$85 — $120</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Men's Cut</h4>
+                                <p>Consultation, wash, cut & style</p>
+                            </div>
+                            <span class="service-item__price">$45 — $55</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Children's Cut</h4>
+                                <p>Under 12 — wash, cut & dry</p>
+                            </div>
+                            <span class="service-item__price">$30 — $40</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Blow Dry & Style</h4>
+                                <p>Shampoo & professionally styled blow dry</p>
+                            </div>
+                            <span class="service-item__price">$55 — $70</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Special Occasion / Updo</h4>
+                                <p>Bridal, formal, or event styling — trial available</p>
+                            </div>
+                            <span class="service-item__price">$95 — $150</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Colour -->
+                <div class="services__panel" data-panel="colour">
+                    <div class="services__list">
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Full Head Colour</h4>
+                                <p>Root to tip single-process colour</p>
+                            </div>
+                            <span class="service-item__price">$150 — $200</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Half Head Foils</h4>
+                                <p>Highlights or lowlights — partial placement</p>
+                            </div>
+                            <span class="service-item__price">$160 — $220</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Full Head Foils</h4>
+                                <p>Complete foil highlight or lowlight service</p>
+                            </div>
+                            <span class="service-item__price">$220 — $300</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Balayage / Ombré</h4>
+                                <p>Hand-painted freehand colour for natural dimension</p>
+                            </div>
+                            <span class="service-item__price">$250 — $350</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Colour Correction</h4>
+                                <p>Complex colour repair — consultation required</p>
+                            </div>
+                            <span class="service-item__price">From $300</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Toner / Gloss</h4>
+                                <p>Refresh tone, add shine & depth</p>
+                            </div>
+                            <span class="service-item__price">$55 — $75</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Treatments -->
+                <div class="services__panel" data-panel="treatments">
+                    <div class="services__list">
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Olaplex Treatment</h4>
+                                <p>Bond-building repair for damaged or colour-treated hair</p>
+                            </div>
+                            <span class="service-item__price">$45</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Keratin Smoothing</h4>
+                                <p>Frizz elimination & smoothing — lasts up to 12 weeks</p>
+                            </div>
+                            <span class="service-item__price">$250 — $400</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Scalp Treatment</h4>
+                                <p>Exfoliating detox & nourishing scalp massage</p>
+                            </div>
+                            <span class="service-item__price">$35</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Deep Conditioning</h4>
+                                <p>Intensive moisture & repair mask treatment</p>
+                            </div>
+                            <span class="service-item__price">$30</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Barbering -->
+                <div class="services__panel" data-panel="barbering">
+                    <div class="services__list">
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Men's Cut & Style</h4>
+                                <p>Precision clipper or scissor cut, wash & style</p>
+                            </div>
+                            <span class="service-item__price">$45 — $55</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Beard Trim</h4>
+                                <p>Shape, trim & hot towel finish</p>
+                            </div>
+                            <span class="service-item__price">$25</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Hot Towel Shave</h4>
+                                <p>Traditional straight-razor shave with hot towel</p>
+                            </div>
+                            <span class="service-item__price">$40</span>
+                        </div>
+                        <div class="service-item reveal-up">
+                            <div class="service-item__info">
+                                <h4>Cut + Beard</h4>
+                                <p>Complete grooming — haircut & beard trim combo</p>
+                            </div>
+                            <span class="service-item__price">$65</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="services__note reveal-up">Prices may vary based on hair length, thickness & complexity. All services include a complimentary consultation.</p>
+        </div>
+
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,120 C360,20 1080,20 1440,120 L1440,120 L0,120 Z" fill="#1a1a1a"/>
+        </svg>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">The Artists</span>
+                <h2 class="section-title">Meet Our <em>Team</em></h2>
+                <p class="section-desc">Passionate stylists dedicated to making you look and feel extraordinary.</p>
+            </div>
+
+            <div class="team__grid">
+                <div class="team__card reveal-up" data-delay="0">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>AR</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="#contact" class="btn btn--small">Book with Aroha</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Aroha Ngata</h3>
+                        <span class="team__card-role">Creative Director & Senior Stylist</span>
+                        <p>Specialising in balayage & lived-in colour. 14 years experience. Trained in London & Melbourne.</p>
+                    </div>
+                </div>
+
+                <div class="team__card reveal-up" data-delay="100">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>JM</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="#contact" class="btn btn--small">Book with Jake</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Jake Morrison</h3>
+                        <span class="team__card-role">Colour Specialist</span>
+                        <p>Colour correction expert & foil wizard. 9 years experience. Kevin Murphy certified educator.</p>
+                    </div>
+                </div>
+
+                <div class="team__card reveal-up" data-delay="200">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>ML</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="#contact" class="btn btn--small">Book with Mei</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Mei Lin</h3>
+                        <span class="team__card-role">Senior Stylist & Texture Expert</span>
+                        <p>Curly hair specialist & precision cutting. 11 years experience. All hair types & textures.</p>
+                    </div>
+                </div>
+
+                <div class="team__card reveal-up" data-delay="300">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>TC</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="#contact" class="btn btn--small">Book with Tom</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Tom Chen</h3>
+                        <span class="team__card-role">Barber & Men's Stylist</span>
+                        <p>Classic barbering meets modern style. 7 years experience. Fades, hot towel shaves & grooming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,0 C360,100 1080,100 1440,0 L1440,120 L0,120 Z" fill="#141414"/>
+        </svg>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Style <em>Gallery</em></h2>
+                <p class="section-desc">A glimpse of the transformations created at Velvet Hair Studio.</p>
+            </div>
+
+            <div class="gallery__filters reveal-up" data-delay="100">
+                <button class="gallery__filter active" data-filter="all">All</button>
+                <button class="gallery__filter" data-filter="colour">Colour</button>
+                <button class="gallery__filter" data-filter="cut">Cut</button>
+                <button class="gallery__filter" data-filter="balayage">Balayage</button>
+                <button class="gallery__filter" data-filter="bridal">Bridal</button>
+                <button class="gallery__filter" data-filter="before-after">Before & After</button>
+            </div>
+
+            <div class="gallery__grid reveal-up" data-delay="200">
+                <div class="gallery__item gallery__item--tall" data-category="balayage">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #2d1b2e, #4a2040);">
+                        <span>Balayage</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Balayage</span>
+                        <p>Sun-kissed balayage by Aroha</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-category="colour">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #1b2d2e, #204a4a);">
+                        <span>Colour</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Colour</span>
+                        <p>Copper red transformation</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-category="cut">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #2d2d1b, #4a4020);">
+                        <span>Cut</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Cut</span>
+                        <p>Textured bob by Mei</p>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item--wide" data-category="before-after">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #2e1b2d, #40204a);">
+                        <span>Before & After</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Before & After</span>
+                        <p>Colour correction journey</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-category="bridal">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #1b1b2d, #20204a);">
+                        <span>Bridal</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Bridal</span>
+                        <p>Romantic updo for the big day</p>
+                    </div>
+                </div>
+                <div class="gallery__item gallery__item--tall" data-category="colour">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #2d1b1b, #4a2020);">
+                        <span>Colour</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Colour</span>
+                        <p>Platinum blonde by Jake</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-category="balayage">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #2d2b1b, #4a4520);">
+                        <span>Balayage</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Balayage</span>
+                        <p>Caramel honey tones</p>
+                    </div>
+                </div>
+                <div class="gallery__item" data-category="cut">
+                    <div class="gallery__placeholder" style="background: linear-gradient(135deg, #1b2d1b, #204a20);">
+                        <span>Cut</span>
+                    </div>
+                    <div class="gallery__overlay">
+                        <span class="gallery__tag">Cut</span>
+                        <p>Clean fade by Tom</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery__cta reveal-up">
+                <a href="https://instagram.com" target="_blank" class="btn btn--outline">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                    Follow Us on Instagram
+                </a>
+            </div>
+        </div>
+
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,120 C360,20 1080,20 1440,120 L1440,120 L0,120 Z" fill="#1a1a1a"/>
+        </svg>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Kind Words</span>
+                <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+            </div>
+
+            <div class="reviews__carousel reveal-up" data-delay="200">
+                <div class="reviews__track" id="reviewsTrack">
+                    <div class="reviews__slide">
+                        <div class="reviews__stars">★★★★★</div>
+                        <blockquote>"Aroha completely transformed my hair. I went in wanting balayage and walked out feeling like a new person. The salon is gorgeous, the coffee is great, and I've never had a better colour experience. Wellington's best kept secret!"</blockquote>
+                        <div class="reviews__author">
+                            <span class="reviews__name">Sophie Hartley</span>
+                            <span class="reviews__detail">Balayage Client</span>
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__stars">★★★★★</div>
+                        <blockquote>"I've been going to Tom for over a year now and wouldn't trust anyone else with my hair. Best barber in Wellington, hands down. The hot towel shave is an experience every guy should try."</blockquote>
+                        <div class="reviews__author">
+                            <span class="reviews__name">Marcus Webb</span>
+                            <span class="reviews__detail">Regular Barbering Client</span>
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__stars">★★★★★</div>
+                        <blockquote>"As someone with curly, textured hair, finding a stylist who actually understands my hair type was a game-changer. Mei is incredible — she listens, she educates, and my curls have never looked better."</blockquote>
+                        <div class="reviews__author">
+                            <span class="reviews__name">Priya Kapoor</span>
+                            <span class="reviews__detail">Cut & Treatment Client</span>
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__stars">★★★★★</div>
+                        <blockquote>"Jake saved my hair after a DIY disaster. The colour correction took time but the result was absolutely stunning. So grateful for his expertise and patience. Worth every dollar!"</blockquote>
+                        <div class="reviews__author">
+                            <span class="reviews__name">Emma Richardson</span>
+                            <span class="reviews__detail">Colour Correction Client</span>
+                        </div>
+                    </div>
+                    <div class="reviews__slide">
+                        <div class="reviews__stars">★★★★★</div>
+                        <blockquote>"I had my bridal hair done here and it was absolutely perfect. Aroha did a trial run and the day-of styling was flawless. My updo lasted all night through dancing and Wellington wind! Couldn't recommend more."</blockquote>
+                        <div class="reviews__author">
+                            <span class="reviews__name">Hannah Te Maro</span>
+                            <span class="reviews__detail">Bridal Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews__controls">
+                    <button class="reviews__btn reviews__btn--prev" id="reviewPrev" aria-label="Previous review">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <div class="reviews__dots" id="reviewDots"></div>
+                    <button class="reviews__btn reviews__btn--next" id="reviewNext" aria-label="Next review">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,0 C360,100 1080,100 1440,0 L1440,120 L0,120 Z" fill="#141414"/>
+        </svg>
+    </section>
+
+    <!-- ============ CONTACT / BOOKING ============ -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Book Your <em>Appointment</em></h2>
+                <p class="section-desc">Ready for a transformation? Fill out the form below or reach out directly.</p>
+            </div>
+
+            <div class="contact__grid">
+                <!-- Booking Form -->
+                <div class="contact__form-col reveal-up">
+                    <form class="contact__form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="fname" name="fname" required>
+                                <label for="fname">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected></option>
+                                    <option>Women's Cut & Blow Dry</option>
+                                    <option>Men's Cut</option>
+                                    <option>Children's Cut</option>
+                                    <option>Blow Dry & Style</option>
+                                    <option>Special Occasion / Updo</option>
+                                    <option>Full Head Colour</option>
+                                    <option>Half Head Foils</option>
+                                    <option>Full Head Foils</option>
+                                    <option>Balayage / Ombré</option>
+                                    <option>Colour Correction</option>
+                                    <option>Toner / Gloss</option>
+                                    <option>Olaplex Treatment</option>
+                                    <option>Keratin Smoothing</option>
+                                    <option>Scalp Treatment</option>
+                                    <option>Deep Conditioning</option>
+                                    <option>Beard Trim</option>
+                                    <option>Hot Towel Shave</option>
+                                    <option>Cut + Beard</option>
+                                </select>
+                                <label for="service">Service Type</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="stylist" name="stylist">
+                                    <option value="" disabled selected></option>
+                                    <option>No Preference</option>
+                                    <option>Aroha Ngata</option>
+                                    <option>Jake Morrison</option>
+                                    <option>Mei Lin</option>
+                                    <option>Tom Chen</option>
+                                </select>
+                                <label for="stylist">Preferred Stylist</label>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" id="prefdate" name="prefdate" required>
+                                <label for="prefdate" class="label--always">Preferred Date</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="preftime" name="preftime">
+                                    <option value="" disabled selected></option>
+                                    <option>9:00 AM</option>
+                                    <option>10:00 AM</option>
+                                    <option>11:00 AM</option>
+                                    <option>12:00 PM</option>
+                                    <option>1:00 PM</option>
+                                    <option>2:00 PM</option>
+                                    <option>3:00 PM</option>
+                                    <option>4:00 PM</option>
+                                    <option>5:00 PM</option>
+                                    <option>6:00 PM</option>
+                                </select>
+                                <label for="preftime">Preferred Time</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-radio-group">
+                                <span class="form-radio-label">First visit with us?</span>
+                                <label class="form-radio"><input type="radio" name="firstvisit" value="yes"> Yes</label>
+                                <label class="form-radio"><input type="radio" name="firstvisit" value="no"> No</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="requests" name="requests" rows="3"></textarea>
+                            <label for="requests">Special Requests or Notes</label>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Request Appointment</button>
+                        <p class="contact__form-note">We'll confirm your booking within 2 hours during business hours.</p>
+                    </form>
+                    <div class="contact__alt-booking">
+                        <p>Prefer instant booking?</p>
+                        <a href="#" class="btn btn--outline">Book via Our Online System →</a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact__info-col reveal-up" data-delay="200">
+                    <div class="contact__info-card">
+                        <h3>Visit the Studio</h3>
+                        <div class="contact__info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div>
+                                <p>89 Courtenay Place</p>
+                                <p>Te Aro, Wellington 6011</p>
+                            </div>
+                        </div>
+                        <div class="contact__info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                            <a href="tel:+6445550555">+64 4 555 0555</a>
+                        </div>
+                        <div class="contact__info-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            <a href="mailto:bookings@velvethairwellington.co.nz">bookings@velvethairwellington.co.nz</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__hours-card">
+                        <h3>Opening Hours</h3>
+                        <div class="contact__hours">
+                            <div class="contact__hour-row">
+                                <span>Tuesday — Friday</span>
+                                <span>9:00am — 7:00pm</span>
+                            </div>
+                            <div class="contact__hour-row">
+                                <span>Saturday</span>
+                                <span>9:00am — 5:00pm</span>
+                            </div>
+                            <div class="contact__hour-row contact__hour-row--closed">
+                                <span>Sunday — Monday</span>
+                                <span>Closed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="contact__map">
+                        <div class="contact__map-placeholder">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <p>89 Courtenay Place, Te Aro</p>
+                            <span>Map integration ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__logo">✦ Velvet Hair Studio</span>
+                    <p>Where Style Meets Soul. Wellington's premier boutique hair studio, crafting beautiful hair since day one.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram" class="footer__social-link footer__social-link--ig">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="footer__social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="TikTok" class="footer__social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13a8.28 8.28 0 005.58 2.17V11.7a4.83 4.83 0 01-3.77-1.24V6.69h3.77z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services & Pricing</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li><span>Tue — Fri</span><span>9am — 7pm</span></li>
+                        <li><span>Saturday</span><span>9am — 5pm</span></li>
+                        <li><span>Sun — Mon</span><span>Closed</span></li>
+                    </ul>
+                    <a href="#" class="footer__gift-cta">🎁 Gift Vouchers Available</a>
+                </div>
+                <div class="footer__contact">
+                    <h4>Get in Touch</h4>
+                    <p>89 Courtenay Place<br>Te Aro, Wellington 6011</p>
+                    <p><a href="tel:+6445550555">+64 4 555 0555</a></p>
+                    <p><a href="mailto:bookings@velvethairwellington.co.nz">bookings@velvet<wbr>hairwellington.co.nz</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 Velvet Hair Studio. All rights reserved.</p>
+                <p>Website designed by <a href="https://wingfieldgemini.github.io" target="_blank">WingfieldGemini</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
