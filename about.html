@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Velvet Hair Studio</title>
+    <meta name="description" content="Learn about Velvet Hair Studio — our story, our team of expert stylists, and our values.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grain-overlay"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <canvas id="shimmer-canvas"></canvas>
+
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="index.html" class="nav__logo">
+                <span class="nav__logo-icon">✦</span>
+                <span class="nav__logo-text">Velvet Hair Studio</span>
+            </a>
+            <ul class="nav__links" id="navLinks">
+                <li><a href="index.html" class="nav__link">Home</a></li>
+                <li><a href="services.html" class="nav__link">Services</a></li>
+                <li><a href="about.html" class="nav__link active">About</a></li>
+                <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+                <li><a href="reviews.html" class="nav__link">Reviews</a></li>
+                <li><a href="contact.html" class="nav__link">Contact</a></li>
+            </ul>
+            <a href="contact.html" class="nav__cta">Book Now</a>
+            <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-menu__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="mobile-menu__cta">Book Now</a>
+        <div class="mobile-menu__info">
+            <p>+64 4 555 0555</p>
+            <p>89 Courtenay Place, Te Aro</p>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="hero" style="min-height: 40vh; display: flex; align-items: center; justify-content: center;">
+        <div class="hero__bg"></div>
+        <div class="hero__content" style="padding-top: 6rem;">
+            <p class="hero__subtitle reveal-text"><a href="index.html" style="color: inherit; text-decoration: none;">Home</a> / About</p>
+            <h1 class="hero__title reveal-text">
+                <span class="hero__title-accent">About</span>
+                <span class="hero__title-line">Us</span>
+            </h1>
+        </div>
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,120 C360,20 1080,20 1440,120 L1440,120 L0,120 Z" fill="#1a1a1a"/>
+        </svg>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image-col reveal-up">
+                    <div class="about__image-wrapper">
+                        <div class="about__image-placeholder">
+                            <span class="placeholder-icon">✦</span>
+                            <span>Salon Interior</span>
+                        </div>
+                        <div class="about__image-accent"></div>
+                    </div>
+                </div>
+                <div class="about__text-col reveal-up" data-delay="200">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">A Wellington <em>Institution</em></h2>
+                    <p>Nestled in the vibrant heart of Courtenay Place, Velvet Hair Studio is more than a salon — it's a sanctuary. Since opening our doors, we've become one of Wellington's most sought-after boutique hair studios, known for transformative colour, precision cuts, and an atmosphere that feels like home.</p>
+                    <p>Our team of passionate stylists brings together decades of collective experience, a commitment to ongoing education, and a genuine love for the craft. We believe great hair starts with understanding — your lifestyle, your texture, your vision.</p>
+                    <div class="about__values">
+                        <div class="about__value">
+                            <span class="about__value-icon">🌿</span>
+                            <h4>Sustainable Beauty</h4>
+                            <p>We proudly use eco-conscious, cruelty-free products from Olaplex, Kevin Murphy & Redken.</p>
+                        </div>
+                        <div class="about__value">
+                            <span class="about__value-icon">💜</span>
+                            <h4>All Welcome</h4>
+                            <p>Every hair type, every texture, every person. Our studio is a safe, inclusive space for all.</p>
+                        </div>
+                    </div>
+                    <div class="about__brands">
+                        <span>Trusted brands:</span>
+                        <div class="about__brand-list">
+                            <span class="about__brand">Olaplex</span>
+                            <span class="about__brand">Kevin Murphy</span>
+                            <span class="about__brand">Redken</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <svg class="section-divider" viewBox="0 0 1440 120" preserveAspectRatio="none">
+            <path d="M0,0 C360,100 1080,100 1440,0 L1440,120 L0,120 Z" fill="#141414"/>
+        </svg>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-label">The Artists</span>
+                <h2 class="section-title">Meet Our <em>Team</em></h2>
+                <p class="section-desc">Passionate stylists dedicated to making you look and feel extraordinary.</p>
+            </div>
+
+            <div class="team__grid">
+                <div class="team__card reveal-up" data-delay="0">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>AR</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="contact.html" class="btn btn--small">Book with Aroha</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Aroha Ngata</h3>
+                        <span class="team__card-role">Creative Director & Senior Stylist</span>
+                        <p>Specialising in balayage & lived-in colour. 14 years experience. Trained in London & Melbourne.</p>
+                    </div>
+                </div>
+
+                <div class="team__card reveal-up" data-delay="100">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>JM</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="contact.html" class="btn btn--small">Book with Jake</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Jake Morrison</h3>
+                        <span class="team__card-role">Colour Specialist</span>
+                        <p>Colour correction expert & foil wizard. 9 years experience. Kevin Murphy certified educator.</p>
+                    </div>
+                </div>
+
+                <div class="team__card reveal-up" data-delay="200">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>ML</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="contact.html" class="btn btn--small">Book with Mei</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Mei Lin</h3>
+                        <span class="team__card-role">Senior Stylist & Texture Expert</span>
+                        <p>Curly hair specialist & precision cutting. 11 years experience. All hair types & textures.</p>
+                    </div>
+                </div>
+
+                <div class="team__card reveal-up" data-delay="300">
+                    <div class="team__card-image">
+                        <div class="team__card-placeholder">
+                            <span>TC</span>
+                        </div>
+                        <div class="team__card-overlay">
+                            <a href="contact.html" class="btn btn--small">Book with Tom</a>
+                        </div>
+                    </div>
+                    <div class="team__card-info">
+                        <h3>Tom Chen</h3>
+                        <span class="team__card-role">Barber & Men's Stylist</span>
+                        <p>Classic barbering meets modern style. 7 years experience. Fades, hot towel shaves & grooming.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <span class="footer__logo">✦ Velvet Hair Studio</span>
+                    <p>Where Style Meets Soul. Wellington's premier boutique hair studio, crafting beautiful hair since day one.</p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="Instagram" class="footer__social-link footer__social-link--ig">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="Facebook" class="footer__social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="TikTok" class="footer__social-link">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 0010.86 4.46V13a8.28 8.28 0 005.58 2.17V11.7a4.83 4.83 0 01-3.77-1.24V6.69h3.77z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services & Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Book Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer__hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li><span>Tue — Fri</span><span>9am — 7pm</span></li>
+                        <li><span>Saturday</span><span>9am — 5pm</span></li>
+                        <li><span>Sun — Mon</span><span>Closed</span></li>
+                    </ul>
+                    <a href="#" class="footer__gift-cta">🎁 Gift Vouchers Available</a>
+                </div>
+                <div class="footer__contact">
+                    <h4>Get in Touch</h4>
+                    <p>89 Courtenay Place<br>Te Aro, Wellington 6011</p>
+                    <p><a href="tel:+6445550555">+64 4 555 0555</a></p>
+                    <p><a href="mailto:bookings@velvethairwellington.co.nz">bookings@velvet<wbr>hairwellington.co.nz</a></p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2026 Velvet Hair Studio. All rights reserved.</p>
+                <p>Website designed by <a href="https://wingfieldgemini.github.io" target="_blank">WingfieldGemini</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
