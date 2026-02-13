@@ -1477,6 +1477,7 @@ img { max-width: 100%; display: block; }
     .nav__links, .nav__cta { display: none; }
     .nav__hamburger { display: flex; }
 
+    .hero { min-height: auto; padding: 140px 0 80px; }
     .hero__title { font-size: clamp(2.5rem, 10vw, 4rem); }
     .hero__scroll-indicator { display: none; }
     .hero__scissors { display: none; }
